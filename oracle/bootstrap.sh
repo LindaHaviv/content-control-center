@@ -8,8 +8,8 @@ cd "$(dirname "$0")"
 
 # load passwords from .env (falls back to demo defaults)
 set -a; [ -f .env ] && . ./.env; set +a
-ORA="${ORACLE_PWD:-DemoPwd_2026}"
-APP="${APP_PWD:-CccPwd_2026}"
+ORA="${ORACLE_PWD:-CHANGE_ME_SysPwd1}"
+APP="${APP_PWD:-CHANGE_ME_AppPwd1}"
 DSN="localhost:1521/FREEPDB1"
 
 echo "waiting for Oracle to be healthy..."

@@ -44,7 +44,7 @@ def redact(s):
 def connect():
     return oracledb.connect(
         user=os.environ.get("DB_USER", "CCC"),
-        password=os.environ.get("APP_PWD", "CccPwd_2026"),
+        password=os.environ.get("APP_PWD", "CHANGE_ME_AppPwd1"),
         dsn=os.environ.get("DB_DSN", "localhost:1521/FREEPDB1"),
     )
 
